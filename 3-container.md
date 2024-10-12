@@ -7,11 +7,17 @@ Para crear un nuevo contenedor Docker a partir de una imagen específica, pero s
 docker create --name <nombre contenedor> <nombre imagen>:<tag>
 ```
 Crear el contenedor  **srv-web** usando la imagen nginx version alpine
+
+![srv-web](Seccion3/ContenedorNginx.png)
 # COMPLETAR
 
 Si creas un contenedor en Docker sin asignarle un nombre específico utilizando la opción --name, Docker asignará automáticamente un nombre aleatorio al contenedor. Este nombre suele consistir en una combinación de palabras y números.  
 
 Crear el contenedor usando la imagen hello-world
+
+![sin nombre](Seccion3/ContenedorSinNombre.png)
+
+![sin nombre](Seccion3/MuestreContenedorSinNombre.png)
 # COMPLETAR
 
 ### Listar los contenedores ejecutándose o no
@@ -20,12 +26,17 @@ Crear el contenedor usando la imagen hello-world
 docker ps -a
 ```
 
+![ejecutandose o no](Seccion3/ListarContenedoresEje.png)
+
+![ejecutandose o no](Seccion3/ListarContenedoresEjeVisual.png)
 ### Para iniciar un contenedor
 
 ```
 docker start <nombre contenedor o identificador>
 ```
 Iniciar el contenedor srv-web 
+
+![iniciar srv-web](Seccion3/IniciarContenedorSrv.png)
 # COMPLETAR
 
 ### Listar los contenedores ejecutándose
@@ -33,7 +44,7 @@ Iniciar el contenedor srv-web
 docker ps 
 docker ps | grep <nombre contenedor>
 ```
-
+![ejecutandose](Seccion3/ListarContenedoresEjecutandose.png)
 ### Para detener un contenedor
 
 ```
