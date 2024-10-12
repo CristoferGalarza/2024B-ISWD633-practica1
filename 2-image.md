@@ -35,6 +35,7 @@ Es un servidor web que también puede funcionar como proxy inverso al reenviar s
 
 Descargar la imagen  **nginx** en la versión **alpine**
 
+![Descarga nginx](img/DescargaNginx.png)
 # COMPLETAR
 
 ### Listar imágenes
@@ -43,6 +44,7 @@ Descargar la imagen  **nginx** en la versión **alpine**
 docker images
 ```
 
+![Listar](img/ListarImagenes.png)
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
 **Identificadores**
@@ -58,9 +60,12 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
+
+![Inspeccionar hello](img/InspeccionarHelloWord.png)
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+Se está utilizando el algoritmo de encriptación SHA-256, el cual se utiliza para transformar datos en una cadena de caracteres de 256 bits. Dado que se genera un id único, sirve para identificar a las diferentes imágenes de forma muy precisa. 
 # COMPLETAR
 
 ### Filtrar imágenes
@@ -70,6 +75,7 @@ docker images | grep <termino a buscar>
 
 ```
 
+![Filtrar imagenes](img/FiltrarImagenes.png)
 ### Para eliminar una imagen
 Eliminar permanentemente la imagen de tu sistema Docker.
 
@@ -78,6 +84,8 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
+
+![Eliminar hello](img/EliminarImagen.png)
 # COMPLETAR
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
@@ -90,3 +98,4 @@ Es una buena práctica detener y eliminar todos los contenedores que dependan de
 docker rmi -f <nombre imagen>:<tag>
 ```
 
+![Eliminar con opcion -f](img/EliminarF.png)
