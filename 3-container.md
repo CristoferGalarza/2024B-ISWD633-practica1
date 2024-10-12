@@ -50,7 +50,9 @@ docker ps | grep <nombre contenedor>
 ```
 docker stop <nombre contenedor>
 ```
+![ejecutandose](Seccion3/DetenerContenedor.png)
 
+![ejecutandose](Seccion3/DetenerContenedorVisual.png)
 ### Para crear un contenedor y ejecutarlo inmediatamente
 
 ```
@@ -59,9 +61,15 @@ docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ![Ecosistema de Docker](img/dockerRun.PNG)
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
+
+
 # COMPLETAR
 
 **¿Qué sucede luego de la ejecución del comando?**
+Se ejecuta inicialmente el Docker-entrypoint.sh por defecto, para luego llamar a Docker-entrypoint.d. Se buscan las configuraciones de la imagen y luego se permite la escucha a través de ipv6, adicionalmente se preparan las variables de entorno y se modifican los procesos de trabajo.
+Tras la finalización de las configuraciones, se da inicio al servidor, mostrando la versión con la que se esta trabajando, los limites de los recursos que se están utilizando y el manejo de solicitudes html. 
+El terminal queda ligado a la ejecución del contenedor, por lo que es imposible realizar algún cambio a menos que antes de realizar la ejecución con el comando run, pongamos la opción -d la cual permite desligar el terminal de comandos de la ejecución del contenedor.
+
 # COMPLETAR  
 
 Cuando ejecutas un contenedor en primer plano sin la opción -d (modo detach), el contenedor captura la entrada estándar (stdin) del terminal, lo que significa que el terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
@@ -74,6 +82,10 @@ Cuando un contenedor se ejecuta en segundo plano, Docker devuelve el control al 
 docker run -d --name <nombre contenedor> <nombre imagen>:tag
 ```
 Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine
+
+![ejecutandose](Seccion3/CrearYEjecutar.png)
+
+![ejecutandose](Seccion3/CrearYEjecutar2.png)
 # COMPLETAR
 
 ### Para eliminar un contenedor
