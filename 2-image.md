@@ -25,12 +25,16 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
+
+![Descarga hello world](img/Imagen1.png)
 # COMPLETAR
 
 **¿Qué es nginx**
+Es un servidor web que también puede funcionar como proxy inverso al reenviar solicitudes a otros servidores, balanceador de carga o proxy de correo. Su función en relación con Docker se da con el proxy inverso, ya que puede encargarse del reenvío de solicitudes hacia otros contenedores, siendo entonces el encargado del reenvío de las solicitudes de los usuarios. 
 # COMPLETAR 
 
 Descargar la imagen  **nginx** en la versión **alpine**
+
 # COMPLETAR
 
 ### Listar imágenes
