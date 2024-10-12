@@ -3,7 +3,8 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 ![Imagen](img/imagen.PNG)
 
 
-## ¿Cuál es la relación entre una imagen y un contenedor? 
+## ¿Cuál es la relación entre una imagen y un contenedor?
+Una imagen contiene diferentes elementos los cuales son necesarios para la ejecución de una aplicación. Lo que se hace en el contenedor es crear una instancia de ejecución en la cual se va a cargar la imagen dado que a partir de una imagen podemos crear diferentes contenedores. En conclusión, el contenedor es una instancia que se crea a partir de una imagen en la cual podemos realizar la ejecución de la aplicación.
 # COMPLETAR 
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
