@@ -30,6 +30,7 @@ Descargar la imagen **hello-world**
 # COMPLETAR
 
 **¿Qué es nginx**
+
 Es un servidor web que también puede funcionar como proxy inverso al reenviar solicitudes a otros servidores, balanceador de carga o proxy de correo. Su función en relación con Docker se da con el proxy inverso, ya que puede encargarse del reenvío de solicitudes hacia otros contenedores, siendo entonces el encargado del reenvío de las solicitudes de los usuarios. 
 # COMPLETAR 
 
@@ -65,6 +66,7 @@ Inspeccionar la imagen hello-world
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+
 Se está utilizando el algoritmo de encriptación SHA-256, el cual se utiliza para transformar datos en una cadena de caracteres de 256 bits. Dado que se genera un id único, sirve para identificar a las diferentes imágenes de forma muy precisa. 
 # COMPLETAR
 
