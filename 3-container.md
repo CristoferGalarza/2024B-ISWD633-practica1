@@ -62,10 +62,11 @@ docker run --name <nombre contenedor> <nombre imagen>:<tag>
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
 
-
+![ejecutandose](Seccion3/EjecucionComando.png)
 # COMPLETAR
 
 **¿Qué sucede luego de la ejecución del comando?**
+
 Se ejecuta inicialmente el Docker-entrypoint.sh por defecto, para luego llamar a Docker-entrypoint.d. Se buscan las configuraciones de la imagen y luego se permite la escucha a través de ipv6, adicionalmente se preparan las variables de entorno y se modifican los procesos de trabajo.
 Tras la finalización de las configuraciones, se da inicio al servidor, mostrando la versión con la que se esta trabajando, los limites de los recursos que se están utilizando y el manejo de solicitudes html. 
 El terminal queda ligado a la ejecución del contenedor, por lo que es imposible realizar algún cambio a menos que antes de realizar la ejecución con el comando run, pongamos la opción -d la cual permite desligar el terminal de comandos de la ejecución del contenedor.
@@ -94,9 +95,13 @@ Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando
 docker rm <nombre contenedor>
 ```
 Eliminar el contenedor que se creó a partir de la imagen hello-world 
+
+![eliminar contenedor hello](Seccion3/EliminarContenedor.png)
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
+
+![Verificar que se elimino](Seccion3/VerificarEliminar.png)
 # COMPLETAR
 
 ### Para eliminar un contenedor que esté ejecutándose
@@ -104,13 +109,20 @@ Verificar que el contenedor que se eliminó
 ```
 docker rm -f <nombre contenedor>
 ```
+
 Eliminar el contenedor **srv-web3** 
+
+![eliminar ejecutandose](Seccion3/EliminarWeb3.png)
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
+
+![verificar eliminar web 3](Seccion3/VerificarEliminarWeb3.png)
 # COMPLETAR
 
 ### Para inspecionar un contenedor 
 
 Inspeccionar el contenedor **srv-web** 
+
+![inspeccionar](Seccion3/InspeccionarWeb.png)
 # COMPLETAR
